@@ -16,4 +16,4 @@
 
 -------
 
-![](https://github.com/lovizot/TestReactNative/Simulator-Screen-Recording-iPhone-14-2022-12-21-at-17.21.58.gif
+![](https://github.com/lovizot/TestReactNative/blob/main/Simulator-Screen-Recording-iPhone-14-2022-12-21-at-17.21.58.gif)
