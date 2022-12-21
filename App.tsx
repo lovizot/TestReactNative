@@ -18,35 +18,7 @@ import {
   View,
 } from 'react-native';
 import Header from './src/components/Header';
-
-interface NavItem {
-  label: string;
-  id: string;
-  route: () => void;
-}
-
-const drawerItems: NavItem[] = [
-  {
-    id: '1',
-    label: 'Start',
-    route: () => {},
-  },
-  {
-    id: '2',
-    label: 'Your Card',
-    route: () => {},
-  },
-  {
-    id: '3',
-    label: 'Favourites',
-    route: () => {},
-  },
-  {
-    id: '4',
-    label: 'Your Orders',
-    route: () => {},
-  },
-];
+import {drawerItems, NavItem} from './src/constants';
 
 const App = () => {
   const scaleMenuRef = useRef(new Animated.Value(1)).current;
@@ -136,7 +108,7 @@ const App = () => {
               </Text>
             </View>
             <>
-              {drawerItems.map((item: NavItem, index) => (
+              {drawerItems.map((item: NavItem, index: number) => (
                 <DrawerItem
                   index={index}
                   navItem={item}
